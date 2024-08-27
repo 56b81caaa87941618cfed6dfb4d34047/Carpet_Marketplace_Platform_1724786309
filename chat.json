@@ -1,5 +1,14 @@
 [
     {
+        "role": "chat_qna",
+        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Where would you like the form to contact Master Chief to be integrated on the app?\", \"option1\": \"On a dedicated 'Contact Us' section.\", \"option2\": \"Embedded within the homepage for easy access.\"}, {\"question 2\": \"What specific fields would you like included in the Master Chief contact form?\", \"option1\": \"Basic fields such as name, email, and a message box.\", \"option2\": \"Advanced fields including subject selection, upload attachment option, and inquiry type.\"}], \"input_token_count\": 598, \"output_token_count\": 115, \"time_taken\": \"0:00:04.894176\"}",
+        "message_id": "guest27082024205816",
+        "timestamp": "27082024205824",
+        "component_file_name": "dark_footer_component_1724786312",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
         "role": "user",
         "content": "Add a form to contact master chief",
         "message_id": "guest27082024205816",
