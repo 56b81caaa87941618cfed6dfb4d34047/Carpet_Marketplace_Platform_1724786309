@@ -1,5 +1,50 @@
 [
     {
+        "role": "chat_ui_checklist",
+        "content": "{\"status\": \"success\", \"ui_elements_checklist\": [{\"feature\": \"Intuitive form interface for easier navigation\", \"checked\": true}, {\"feature\": \"Auto-fill functionality for returning users\", \"checked\": true}, {\"feature\": \"CAPTCHA integration for security\", \"checked\": false}, {\"feature\": \"Responsive design for mobile users\", \"checked\": true}, {\"feature\": \"Submission confirmation message\", \"checked\": true}, {\"feature\": \"Option to attach files/photos in the form\", \"checked\": false}], \"input_token_count\": 486, \"output_token_count\": 107, \"time_taken\": \"0:00:04.731039\"}",
+        "message_id": "guest27082024200250",
+        "timestamp": "27082024200257",
+        "component_file_name": "purple_header_component_1724786312",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
+        "role": "chat_qna",
+        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Where should the 'Contact Santa' form be placed within the app's layout?\", \"option1\": \"On a separate dedicated page accessible via a menu option.\", \"option2\": \"As a popup form that can be triggered by a button on the homepage.\"}, {\"question 2\": \"What information would you like the users to provide in the 'Contact Santa' form?\", \"option1\": \"Name, Email, and Message only.\", \"option2\": \"Name, Email, Phone Number, and a detailed Message.\"}], \"input_token_count\": 532, \"output_token_count\": 119, \"time_taken\": \"0:00:04.424887\"}",
+        "message_id": "guest27082024200250",
+        "timestamp": "27082024200257",
+        "component_file_name": "purple_header_component_1724786312",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
+        "role": "chat_acknowledge",
+        "content": "Will do, adding a contact form for Santa.",
+        "message_id": "guest27082024200250",
+        "timestamp": "27082024200252",
+        "component_file_name": "",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
+        "role": "user",
+        "content": "Add a form to contact santa",
+        "message_id": "guest27082024200250",
+        "timestamp": "27082024200250",
+        "component_file_name": "purple_header_component_1724786312",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
+        "role": "chat_qna",
+        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Would you prefer this contact form to be accessible from the main menu or as a dedicated section at the bottom of the homepage?\", \"option1\": \"Main menu\", \"option2\": \"Homepage section\"}, {\"question 2\": \"Should the contact form include specific fields for the user\\u2019s issue or request, or would you like a simple form with just 'Name', 'Email', and 'Message' fields?\", \"option1\": \"Specific fields for the user\\u2019s issue or request\", \"option2\": \"Simple form with 'Name', 'Email', and 'Message'\"}], \"input_token_count\": 269, \"output_token_count\": 131, \"time_taken\": \"0:00:09.168037\"}",
+        "message_id": "guest27082024195511",
+        "timestamp": "27082024195522",
+        "component_file_name": "purple_background_cta_component_1724786312",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
         "role": "user",
         "content": "Add a form to contact Master Chief",
         "message_id": "guest27082024195511",
@@ -45,54 +90,9 @@
         "div_action": ""
     },
     {
-        "role": "chat_qna",
-        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Where would you like the 'Contact Santa' form to be located within the app?\", \"option1\": \"On a separate, dedicated page accessible through the main navigation menu.\", \"option2\": \"As a pop-up form that can be accessed by clicking a 'Contact Santa' button on the homepage.\"}, {\"question 2\": \"What specific information would you like users to provide in the 'Contact Santa' form?\", \"option1\": \"Basic contact information (e.g., name, email) and their wish list or message to Santa.\", \"option2\": \"Detailed information including contact details, preferred contact method, and an upload feature for letters or images.\"}], \"input_token_count\": 268, \"output_token_count\": 147, \"time_taken\": \"0:00:03.596359\"}",
-        "message_id": "guest27082024194454",
-        "timestamp": "27082024194500",
-        "component_file_name": "purple_header_component_1724786312",
-        "div_id": "",
-        "div_action": ""
-    },
-    {
-        "role": "chat_acknowledge",
-        "content": "Sure, I'll add a form to contact Santa.",
-        "message_id": "guest27082024194454",
-        "timestamp": "27082024194455",
-        "component_file_name": "",
-        "div_id": "",
-        "div_action": ""
-    },
-    {
-        "role": "user",
-        "content": "Add a form to contact santa",
-        "message_id": "guest27082024194454",
-        "timestamp": "27082024194454",
-        "component_file_name": "purple_header_component_1724786312",
-        "div_id": "",
-        "div_action": ""
-    },
-    {
-        "role": "chat_qna",
-        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Should the 'Hadoken' button be of the same style and size as the 'Pour Coffee' button?\", \"option1\": \"Yes, keep the style and size consistent.\", \"option2\": \"No, make the 'Hadoken' button have a distinct style or size.\"}, {\"question 2\": \"Do you want any specific functionality or animation associated with the 'Hadoken' button when clicked?\", \"option1\": \"Yes, add a specific action or animation.\", \"option2\": \"No, just a simple clickable button without extra effects.\"}], \"input_token_count\": 353, \"output_token_count\": 126, \"time_taken\": \"0:00:03.897427\"}",
-        "message_id": "guest27082024194310",
-        "timestamp": "27082024194318",
-        "component_file_name": "purple_header_component_1724786312",
-        "div_id": "",
-        "div_action": ""
-    },
-    {
-        "role": "chat_acknowledge",
-        "content": "Got it, adding a \"Hadoken\" button to the left.",
-        "message_id": "guest27082024194310",
-        "timestamp": "27082024194312",
-        "component_file_name": "",
-        "div_id": "",
-        "div_action": ""
-    },
-    {
         "role": "summary",
-        "content": "In the conversation, the user requested the addition of a button labeled \"pour coffee\" and specified that it should be positioned to the left of another button, also referred to as the \"pour coffee\" button. The AI acknowledged this idea, expressing that it was working on the task. Subsequently, the AI asked for clarification about the positioning of the button and the action intended when it is clicked, offering two options for each query. The user also mentioned adding a \"hadoken\" button, to which the AI confirmed its addition to the project. During this exchange, the AI presented the user with a checklist of potential features for implementation, highlighting some that were checked as preferred, such as an interactive 3D view of carpets and a customer review section, while others like user registration and live chat support remained unchecked, indicating areas for consideration. The conversation demonstrated a collaborative effort in enhancing the application's functionality.",
-        "timestamp": "27082024195511",
-        "message_id": "guest27082024195511"
+        "content": "The user engaged with the AI assistant to request several features for an app. Initially, the user asked to add a \"Contact Santa\" form, to which the AI responded affirmatively and posed two questions regarding its placement and the information it should collect. The user chose options for a separate page for the form and specific basic information to be included. The assistant confirmed the addition. Next, the user requested a \"Hadoken\" button to be placed to the left of the \"Pour Coffee\" button, prompting the AI to seek clarification on the style and functionality of the button. After the user provided their preferences, the AI acknowledged the request to add the button.\n\nFurther, the user asked for a button labeled \"Pour Coffee.\" The AI then sought clarification on the button's position and functionality, and the user responded with their choices, which the AI noted. The conversation concluded with the AI summarizing the ongoing tasks and checking on additional features that had previously been implemented, including a checklist of desired app functionalities, where the user confirmed some and declined others. The AI tracked all requests and queries, expressing readiness to incorporate the requested features into the project.",
+        "timestamp": "27082024200257",
+        "message_id": "guest27082024200250"
     }
 ]
