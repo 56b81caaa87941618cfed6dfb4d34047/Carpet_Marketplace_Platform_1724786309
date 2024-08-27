@@ -64,15 +64,6 @@ INSTRUCTION: 3. Desktop sign-in and sign-up links on the right.
                 Contact
               </a>
             </li>
-            <li>
-              <a
-                id="Contact-Santa-link"
-                class="font-medium text-sm mx-4 lg:mx-5 transition duration-150 ease-in-out text-white hover:text-pink-200"
-                href="ContactSanta.html"
-              >
-                Contact Santa
-              </a>
-            </li>
           </ul>
         </nav>
 
@@ -165,40 +156,12 @@ INSTRUCTION: 3. Desktop sign-in and sign-up links on the right.
               <li>
                 <a id="mobile-Contact-link" class="flex font-medium text-sm py-1.5 text-white hover:text-pink-200" href="Contact.html">Contact</a>
               </li>
-              <li>
-                <a id="mobile-Contact-Santa-link" class="flex font-medium text-sm py-1.5 text-white hover:text-pink-200" href="ContactSanta.html">Contact Santa</a>
-              </li>
-            </ul>
             </ul>
           </nav>
         </div>
       </div>
     </div>
   </header>
-
-  <!-- Contact Santa Form -->
-  <div class="max-w-lg mx-auto mt-8 p-6 bg-white rounded-lg shadow-lg">
-    <h2 class="text-2xl font-bold mb-4 text-center text-purple-600">Contact Santa</h2>
-    <form @submit.prevent="submitSantaForm" class="space-y-4">
-      <div>
-        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-        <input type="text" id="name" v-model="santaForm.name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50">
-      </div>
-      <div>
-        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-        <input type="email" id="email" v-model="santaForm.email" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50">
-      </div>
-      <div>
-        <label for="message" class="block text-sm font-medium text-gray-700">Message to Santa</label>
-        <textarea id="message" v-model="santaForm.message" rows="4" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"></textarea>
-      </div>
-      <div>
-        <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
-          Send to Santa
-        </button>
-      </div>
-    </form>
-  </div>
 </template>
 
 <script>
@@ -208,11 +171,6 @@ export default {
     return {
       expanded: false,
       tab: null,
-      santaForm: {
-        name: '',
-        email: '',
-        message: ''
-      }
     };
   },
   methods: {
@@ -228,15 +186,7 @@ export default {
       console.log("Pouring coffee...");
       // Add your coffee pouring logic here
     }
-    },
-    // Santa Form Submit method
-    submitSantaForm() {
-      console.log('Submitting Santa Form:', this.santaForm);
-      // Add your form submission logic here
-      // Reset form after submission
-      this.santaForm = { name: '', email: '', message: '' };
-    }
-    // End of Santa Form Submit method
+    // End of Pour Coffee method
   }
 };
 </script>
