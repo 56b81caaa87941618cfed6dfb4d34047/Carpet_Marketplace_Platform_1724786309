@@ -1,5 +1,14 @@
 [
     {
+        "role": "chat_qna",
+        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Where would you like the 'Contact Santa' email form to be placed within the app?\", \"option1\": \"Accessible directly from the main menu\", \"option2\": \"As a pop-up that appears after a user action\"}, {\"question 2\": \"What level of information would you like the form to collect from the user?\", \"option1\": \"Basic information (Name and Email only)\", \"option2\": \"Detailed information (Name, Email, Message, and optional contact number)\"}], \"input_token_count\": 586, \"output_token_count\": 114, \"time_taken\": \"0:00:03.095138\"}",
+        "message_id": "guest27082024204021",
+        "timestamp": "27082024204027",
+        "component_file_name": "purple_header_component_1724786312",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
         "role": "chat_acknowledge",
         "content": "Great idea, I'll add a contact form for Santa via email.",
         "message_id": "guest27082024204021",
