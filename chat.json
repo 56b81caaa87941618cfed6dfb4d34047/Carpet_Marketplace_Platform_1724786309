@@ -1,5 +1,14 @@
 [
     {
+        "role": "chat_acknowledge",
+        "content": "Working on adding a button that says \"Pour coffee\".",
+        "message_id": "guest27082024193439",
+        "timestamp": "27082024193440",
+        "component_file_name": "",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
         "role": "user",
         "content": "Add a button that says: pour coffee",
         "message_id": "guest27082024193439",
