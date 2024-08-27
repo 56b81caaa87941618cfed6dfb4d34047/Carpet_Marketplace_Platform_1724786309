@@ -48,5 +48,11 @@
         "content": "Add a hadoken button to the left of the \"Pour Coffee\" button",
         "timestamp": "27082024194311",
         "message_id": "guest27082024194310"
+    },
+    {
+        "role": "chat_acknowledge",
+        "content": "Got it, adding a \"Hadoken\" button to the left.",
+        "timestamp": "27082024194312",
+        "message_id": "guest27082024194310"
     }
 ]
