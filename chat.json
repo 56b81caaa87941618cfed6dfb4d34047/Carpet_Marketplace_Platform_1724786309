@@ -1,5 +1,14 @@
 [
     {
+        "role": "chat_qna",
+        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Where would you like the 'Contact Santa' form to be located within the app?\", \"option1\": \"On a separate, dedicated page accessible through the main navigation menu.\", \"option2\": \"As a pop-up form that can be accessed by clicking a 'Contact Santa' button on the homepage.\"}, {\"question 2\": \"What specific information would you like users to provide in the 'Contact Santa' form?\", \"option1\": \"Basic contact information (e.g., name, email) and their wish list or message to Santa.\", \"option2\": \"Detailed information including contact details, preferred contact method, and an upload feature for letters or images.\"}], \"input_token_count\": 268, \"output_token_count\": 147, \"time_taken\": \"0:00:03.596359\"}",
+        "message_id": "guest27082024194454",
+        "timestamp": "27082024194500",
+        "component_file_name": "purple_header_component_1724786312",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
         "role": "chat_acknowledge",
         "content": "Sure, I'll add a form to contact Santa.",
         "message_id": "guest27082024194454",
