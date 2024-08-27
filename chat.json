@@ -1,5 +1,14 @@
 [
     {
+        "role": "chat_qna",
+        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Do you prefer the contact form to be embedded directly on the 'Contact Us' page or should it pop up as a separate window when a 'Contact Santa' button is clicked?\", \"option1\": \"Embed directly on the page\", \"option2\": \"Pop up in a separate window\"}, {\"question 2\": \"For the email form, besides the basic fields (Name, Email), do you want to include any specific fields such as 'Child's Name', 'Wish List', or 'Message'?\", \"option1\": \"Include 'Child's Name' and 'Wish List'\", \"option2\": \"Include 'Message' field only\"}], \"input_token_count\": 599, \"output_token_count\": 147, \"time_taken\": \"0:00:11.888904\"}",
+        "message_id": "guest27082024205940",
+        "timestamp": "27082024205954",
+        "component_file_name": "purple_header_component_1724786312",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
         "role": "chat_acknowledge",
         "content": "Got it! Implementing a form to contact Santa via email.",
         "message_id": "guest27082024205940",
