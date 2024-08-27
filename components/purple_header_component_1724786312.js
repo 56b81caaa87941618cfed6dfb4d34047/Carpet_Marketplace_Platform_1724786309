@@ -162,36 +162,6 @@ INSTRUCTION: 3. Desktop sign-in and sign-up links on the right.
       </div>
     </div>
   </header>
-
-  <!-- Contact Santa Form -->
-  <div class="max-w-md mx-auto mt-8 p-6 bg-white rounded-lg shadow-lg">
-    <h2 class="text-2xl font-bold mb-4 text-center text-red-600">Contact Santa</h2>
-    <form @submit.prevent="submitSantaForm">
-      <div class="mb-4">
-        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-        <input type="text" id="name" v-model="santaForm.name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50" required>
-      </div>
-      <div class="mb-4">
-        <label for="wishlist" class="block text-sm font-medium text-gray-700">Your Wishlist</label>
-        <textarea id="wishlist" v-model="santaForm.wishlist" rows="3" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50" required></textarea>
-      </div>
-      <div class="mb-4">
-        <label for="niceLevel" class="block text-sm font-medium text-gray-700">How nice have you been?</label>
-        <select id="niceLevel" v-model="santaForm.niceLevel" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50" required>
-          <option value="very">Very Nice</option>
-          <option value="mostly">Mostly Nice</option>
-          <option value="sometimes">Sometimes Nice</option>
-          <option value="naughty">A Bit Naughty</option>
-        </select>
-      </div>
-      <div class="text-center">
-        <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
-          <i class='bx bx-envelope mr-2'></i>
-          Send to Santa
-        </button>
-      </div>
-    </form>
-  </div>
 </template>
 
 <script>
@@ -201,11 +171,6 @@ export default {
     return {
       expanded: false,
       tab: null,
-      santaForm: {
-        name: '',
-        wishlist: '',
-        niceLevel: 'mostly'
-      }
     };
   },
   methods: {
@@ -221,17 +186,7 @@ export default {
       console.log("Pouring coffee...");
       // Add your coffee pouring logic here
     }
-    },
     // End of Pour Coffee method
-
-    // Submit Santa Form method
-    submitSantaForm() {
-      console.log("Sending to Santa:", this.santaForm);
-      // Add your form submission logic here
-      alert("Your message has been sent to Santa!");
-      this.santaForm = { name: '', wishlist: '', niceLevel: 'mostly' };
-    }
-    // End of Submit Santa Form method
   }
 };
 </script>
