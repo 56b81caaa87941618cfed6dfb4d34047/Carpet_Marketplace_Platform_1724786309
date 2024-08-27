@@ -42,5 +42,11 @@
         "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Can you clarify where on the app you would like the 'pour coffee' button to be positioned?\", \"option1\": \"On the main screen, near the top of the page.\", \"option2\": \"In the product detail section, next to the purchase options.\"}, {\"question 2\": \"What should happen when the 'pour coffee' button is clicked? Is it meant to display a message, redirect to another page, or perform a specific action?\", \"option1\": \"Display a humorous or engaging message related to coffee.\", \"option2\": \"Redirect to a promotional page or section about special coffee-related products.\"}], \"input_token_count\": 270, \"output_token_count\": 139, \"time_taken\": \"0:00:03.677011\"}",
         "timestamp": "27082024193444",
         "message_id": "guest27082024193439"
+    },
+    {
+        "role": "user",
+        "content": "Add a hadoken button to the left of the \"Pour Coffee\" button",
+        "timestamp": "27082024194311",
+        "message_id": "guest27082024194310"
     }
 ]
