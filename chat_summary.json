@@ -30,5 +30,11 @@
         "content": "Add a button that says: pour coffee",
         "timestamp": "27082024193439",
         "message_id": "guest27082024193439"
+    },
+    {
+        "role": "chat_acknowledge",
+        "content": "Working on adding a button that says \"Pour coffee\".",
+        "timestamp": "27082024193440",
+        "message_id": "guest27082024193439"
     }
 ]
