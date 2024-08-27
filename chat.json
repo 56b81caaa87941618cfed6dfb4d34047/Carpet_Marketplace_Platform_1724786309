@@ -1,5 +1,14 @@
 [
     {
+        "role": "chat_qna",
+        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Would you like the email form to be integrated into the existing 'Contact Santa' page, or should it be a new, separate feature?\", \"option1\": \"Integrate into the existing 'Contact Santa' page\", \"option2\": \"Create a new, separate page for the email form\"}, {\"question 2\": \"What specific information should the email form collect from users?\", \"option1\": \"Only collect basic information such as name and email address\", \"option2\": \"Collect detailed information including name, email address, and a message field\"}], \"input_token_count\": 563, \"output_token_count\": 126, \"time_taken\": \"0:00:02.908738\"}",
+        "message_id": "guest27082024200858",
+        "timestamp": "27082024200903",
+        "component_file_name": "purple_header_component_1724786312",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
         "role": "chat_acknowledge",
         "content": "Certainly, I'll add an email form to contact Santa.",
         "message_id": "guest27082024200858",
