@@ -49,6 +49,33 @@ INSTRUCTION: It is centered on the page and includes a gradient-based title, a s
             <span id="content-cta-arrow" class="tracking-normal group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1 text-purple-500">-&gt;</span>
           </a>
         </div>
+
+        <!-- Contact Santa Form -->
+        <div id="contact-santa-form" class="mt-12 max-w-lg mx-auto">
+          <h3 class="text-2xl font-bold text-white mb-6">Contact Santa</h3>
+          <form @submit.prevent="submitSantaForm">
+            <div class="mb-4">
+              <label for="name" class="block text-sm font-medium text-white mb-2">Your Name</label>
+              <input type="text" id="name" v-model="santaForm.name" class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none" required>
+            </div>
+            <div class="mb-4">
+              <label for="wishlist" class="block text-sm font-medium text-white mb-2">Your Wishlist</label>
+              <textarea id="wishlist" v-model="santaForm.wishlist" rows="4" class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none" required></textarea>
+            </div>
+            <div class="mb-4">
+              <label for="naughty-nice" class="block text-sm font-medium text-white mb-2">Have you been naughty or nice?</label>
+              <select id="naughty-nice" v-model="santaForm.status" class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none" required>
+                <option value="nice">Nice</option>
+                <option value="naughty">Naughty</option>
+                <option value="both">A bit of both</option>
+              </select>
+            </div>
+            <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+              Send to Santa
+            </button>
+          </form>
+        </div>
+
       </div>
     </div>
   </section>
@@ -60,8 +87,27 @@ export default {
   data() {
     return {
       expanded: false,
-      tab: null
+      tab: null,
+      santaForm: {
+        name: '',
+        wishlist: '',
+        status: 'nice'
+      }
     };
+  },
+  methods: {
+    // Submit Santa Form method
+    submitSantaForm() {
+      console.log('Form submitted:', this.santaForm);
+      // Add your form submission logic here
+      // Reset form after submission
+      this.santaForm = {
+        name: '',
+        wishlist: '',
+        status: 'nice'
+      };
+    }
+    // End of Submit Santa Form method
   }
 };
 </script>
