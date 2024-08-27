@@ -1,5 +1,14 @@
 [
     {
+        "role": "chat_qna",
+        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Would you prefer the 'Contact Santa' email form to be integrated on the homepage or on a dedicated 'Contact Us' page?\", \"option1\": \"Integrate on the homepage for easy access\", \"option2\": \"Place it on a dedicated 'Contact Us' page for a more organized look\"}, {\"question 2\": \"Should the email form include a drop-down menu for the type of inquiry (e.g., Gift Inquiry, Say Hello to Santa, Report a Missing Elf)?\", \"option1\": \"Yes, include a drop-down menu for specific inquiries\", \"option2\": \"No, keep the form simple with just name, email, and message fields\"}], \"input_token_count\": 618, \"output_token_count\": 150, \"time_taken\": \"0:00:03.949045\"}",
+        "message_id": "guest27082024204713",
+        "timestamp": "27082024204719",
+        "component_file_name": "purple_header_component_1724786312",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
         "role": "chat_acknowledge",
         "content": "Acknowledged, working on adding an email form for Santa.",
         "message_id": "guest27082024204713",
