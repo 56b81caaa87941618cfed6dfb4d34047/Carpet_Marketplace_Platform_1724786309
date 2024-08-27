@@ -4,5 +4,6 @@
     "project_description": "carpet market place",
     "creation_time": "2024-08-27 15:18:29.477051",
     "current_state": "The current state of the application has a navbar and a header",
-    "selected_starter_template_id": "stellar"
+    "selected_starter_template_id": "stellar",
+    "frontend_theme_prompt": "The image employs a vibrant color scheme of predominantly pink, purple, and black, with a fantastical and surreal style featuring dramatic, otherworldly landscapes and celestial bodies. The strong contrast and luminous color gradients create a dreamy, sci-fi atmosphere."
 }
