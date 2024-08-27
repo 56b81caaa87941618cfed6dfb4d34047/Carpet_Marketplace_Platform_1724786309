@@ -64,6 +64,15 @@ INSTRUCTION: 3. Desktop sign-in and sign-up links on the right.
                 Contact
               </a>
             </li>
+            <li>
+              <a
+                id="Contact-Santa-link"
+                class="font-medium text-sm mx-4 lg:mx-5 transition duration-150 ease-in-out text-white hover:text-pink-200"
+                href="ContactSanta.html"
+              >
+                Contact Santa
+              </a>
+            </li>
           </ul>
         </nav>
 
@@ -156,6 +165,10 @@ INSTRUCTION: 3. Desktop sign-in and sign-up links on the right.
               <li>
                 <a id="mobile-Contact-link" class="flex font-medium text-sm py-1.5 text-white hover:text-pink-200" href="Contact.html">Contact</a>
               </li>
+              <li>
+                <a id="mobile-Contact-Santa-link" class="flex font-medium text-sm py-1.5 text-white hover:text-pink-200" href="ContactSanta.html">Contact Santa</a>
+              </li>
+            </ul>
             </ul>
           </nav>
         </div>
