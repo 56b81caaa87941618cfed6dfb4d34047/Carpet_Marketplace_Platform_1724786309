@@ -113,19 +113,6 @@ INSTRUCTION: 3. Desktop sign-in and sign-up links on the right.
           </button>
         </div>
 
-        <!-- Contact Santa Button -->
-        <div class="flex-1 flex justify-end items-center ml-2">
-          <button
-            id="contact-santa-button"
-            class="btn-sm transition duration-150 ease-in-out text-white hover:text-red-300 bg-gradient-to-r from-red-600 to-red-400 hover:from-red-500 hover:to-red-300 rounded-full px-4 py-2 shadow-lg flex items-center"
-            @click="toggleSantaForm"
-          >
-            <i class='bx bxs-envelope mr-2'></i>
-            Contact Santa
-          </button>
-        </div>
-
-        <!-- Mobile Menu -->
         <!-- Mobile Menu -->
         <div class="md:hidden flex items-center ml-4">
           <button
@@ -175,25 +162,6 @@ INSTRUCTION: 3. Desktop sign-in and sign-up links on the right.
       </div>
     </div>
   </header>
-
-  <!-- Contact Santa Form -->
-  <div class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full" id="santa-modal" v-if="showSantaForm">
-    <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
-      <div class="mt-3 text-center">
-        <h3 class="text-lg leading-6 font-medium text-gray-900">Contact Santa</h3>
-        <div class="mt-2 px-7 py-3">
-          <form @submit.prevent="submitSantaForm">
-            <input type="text" v-model="santaForm.name" placeholder="Your Name" class="mt-2 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" required>
-            <input type="email" v-model="santaForm.email" placeholder="Your Email" class="mt-2 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" required>
-            <textarea v-model="santaForm.message" placeholder="Your Message to Santa" class="mt-2 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" required></textarea>
-            <button type="submit" class="mt-4 bg-blue-500 text-white active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
-              Send to Santa
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
 </template>
 
 <script>
@@ -203,13 +171,8 @@ export default {
     return {
       expanded: false,
       tab: null,
-      showSantaForm: false,
-      santaForm: {
-        name: '',
-        email: '',
-        message: ''
-      }
     };
+  },
   methods: {
     // Hadoken method
     performHadoken() {
@@ -223,24 +186,7 @@ export default {
       console.log("Pouring coffee...");
       // Add your coffee pouring logic here
     }
-    },
     // End of Pour Coffee method
-
-    // Santa Form Submit method
-    submitSantaForm() {
-      console.log('Submitting Santa Form:', this.santaForm);
-      // Add your form submission logic here
-      // Reset form after submission
-      this.santaForm = { name: '', email: '', message: '' };
-      this.showSantaForm = false;
-    },
-    // End of Santa Form Submit method
-
-    // Toggle Santa Form method
-    toggleSantaForm() {
-      this.showSantaForm = !this.showSantaForm;
-    }
-    // End of Toggle Santa Form method
   }
 };
 </script>
