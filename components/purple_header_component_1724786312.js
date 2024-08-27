@@ -113,27 +113,6 @@ INSTRUCTION: 3. Desktop sign-in and sign-up links on the right.
           </button>
         </div>
 
-        <!-- Contact Santa Form -->
-        <div class="flex-1 flex justify-end items-center ml-4">
-          <button
-            id="contact-santa-button"
-            class="btn-sm transition duration-150 ease-in-out text-white hover:text-red-300 bg-gradient-to-r from-red-600 to-red-400 hover:from-red-500 hover:to-red-300 rounded-full px-4 py-2 shadow-lg flex items-center"
-            @click="toggleSantaForm"
-          >
-            <i class='bx bxs-envelope mr-2'></i>
-            Contact Santa
-          </button>
-        </div>
-
-        <div v-if="showSantaForm" class="absolute top-full right-0 mt-2 w-64 bg-white rounded-lg shadow-lg p-4">
-          <form @submit.prevent="submitSantaForm">
-            <input v-model="santaForm.name" type="text" placeholder="Your Name" class="w-full mb-2 p-2 border rounded">
-            <input v-model="santaForm.email" type="email" placeholder="Your Email" class="w-full mb-2 p-2 border rounded">
-            <textarea v-model="santaForm.message" placeholder="Your Message to Santa" class="w-full mb-2 p-2 border rounded"></textarea>
-            <button type="submit" class="w-full bg-red-500 text-white p-2 rounded hover:bg-red-600">Send to Santa</button>
-          </form>
-        </div>
-
         <!-- Mobile Menu -->
         <div class="md:hidden flex items-center ml-4">
           <button
@@ -192,13 +171,8 @@ export default {
     return {
       expanded: false,
       tab: null,
-      showSantaForm: false,
-      santaForm: {
-        name: '',
-        email: '',
-        message: ''
-      }
     };
+  },
   methods: {
     // Hadoken method
     performHadoken() {
@@ -211,24 +185,8 @@ export default {
     pourCoffee() {
       console.log("Pouring coffee...");
       // Add your coffee pouring logic here
-    },
-    // End of Pour Coffee method
-
-    // Toggle Santa Form method
-    toggleSantaForm() {
-      this.showSantaForm = !this.showSantaForm;
-    },
-    // End of Toggle Santa Form method
-
-    // Submit Santa Form method
-    submitSantaForm() {
-      console.log('Submitting Santa Form:', this.santaForm);
-      // Add your form submission logic here
-      // Reset form after submission
-      this.santaForm = { name: '', email: '', message: '' };
-      this.showSantaForm = false;
     }
-    // End of Submit Santa Form method
+    // End of Pour Coffee method
   }
 };
 </script>
