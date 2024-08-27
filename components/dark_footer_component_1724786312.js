@@ -227,7 +227,6 @@ INSTRUCTION: 5. The fifth column covers legal information such as the refund pol
           </ul>
         </div>
       </div>
-
       <!-- Contact Santa Form -->
       <div class="max-w-md mx-auto mt-8 p-6 bg-red-100 rounded-lg shadow-lg">
         <h2 class="text-2xl font-bold text-red-700 mb-4">Contact Santa</h2>
@@ -248,6 +247,26 @@ INSTRUCTION: 5. The fifth column covers legal information such as the refund pol
         </form>
       </div>
 
+      <!-- Contact Master Chief Form -->
+      <div class="max-w-md mx-auto mt-8 p-6 bg-green-100 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold text-green-700 mb-4">Contact Master Chief</h2>
+        <form @submit.prevent="submitMasterChiefForm">
+          <div class="mb-4">
+            <label for="mc-name" class="block text-sm font-medium text-green-700">Name</label>
+            <input type="text" id="mc-name" v-model="masterChiefForm.name" class="mt-1 block w-full rounded-md border-green-300 shadow-sm focus:border-green-500 focus:ring focus:ring-green-200 focus:ring-opacity-50" required>
+          </div>
+          <div class="mb-4">
+            <label for="mc-email" class="block text-sm font-medium text-green-700">Email</label>
+            <input type="email" id="mc-email" v-model="masterChiefForm.email" class="mt-1 block w-full rounded-md border-green-300 shadow-sm focus:border-green-500 focus:ring focus:ring-green-200 focus:ring-opacity-50" required>
+          </div>
+          <div class="mb-4">
+            <label for="mc-message" class="block text-sm font-medium text-green-700">Message to Master Chief</label>
+            <textarea id="mc-message" v-model="masterChiefForm.message" rows="4" class="mt-1 block w-full rounded-md border-green-300 shadow-sm focus:border-green-500 focus:ring focus:ring-green-200 focus:ring-opacity-50" required></textarea>
+          </div>
+          <button type="submit" class="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">Send to Master Chief</button>
+        </form>
+      </div>
+
     </div>
   </footer>
   </footer>
@@ -264,6 +283,11 @@ export default {
         name: '',
         email: '',
         message: ''
+      },
+      masterChiefForm: {
+        name: '',
+        email: '',
+        message: ''
       }
     };
   },
@@ -271,8 +295,14 @@ export default {
     submitSantaForm() {
       console.log('Submitting Santa Form:', this.santaForm);
       // Add your form submission logic here
-      // Reset form after submissiona
+      // Reset form after submission
       this.santaForm = { name: '', email: '', message: '' };
+    },
+    submitMasterChiefForm() {
+      console.log('Submitting Master Chief Form:', this.masterChiefForm);
+      // Add your form submission logic here
+      // Reset form after submission
+      this.masterChiefForm = { name: '', email: '', message: '' };
     }
   }
 };
