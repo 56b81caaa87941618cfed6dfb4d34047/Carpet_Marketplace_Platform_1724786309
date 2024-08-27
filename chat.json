@@ -1,5 +1,14 @@
 [
     {
+        "role": "chat_qna",
+        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Would you prefer this new 'Contact Santa' form to replace the existing one, or should it be an additional form with different functionality?\", \"option1\": \"Replace the existing form\", \"option2\": \"Add as an additional form\"}, {\"question 2\": \"For the new form, are there specific fields or information you would like to collect from users that differ from the previous form?\", \"option1\": \"Use the same fields as the previous form\", \"option2\": \"Add new fields and specify\"}], \"input_token_count\": 562, \"output_token_count\": 118, \"time_taken\": \"0:00:02.640969\"}",
+        "message_id": "guest27082024200649",
+        "timestamp": "27082024200654",
+        "component_file_name": "purple_header_component_1724786312",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
         "role": "chat_acknowledge",
         "content": "Absolutely, we will add a form for contacting Santa.",
         "message_id": "guest27082024200649",
