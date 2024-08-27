@@ -1,5 +1,14 @@
 [
     {
+        "role": "chat_qna",
+        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Where would you like the email contact form for Santa to be placed within the website?\", \"option1\": \"On the homepage for immediate visibility\", \"option2\": \"On a dedicated 'Contact Santa' page for a focused user experience\"}, {\"question 2\": \"What information would you like to collect from users in the 'Contact Santa' email form?\", \"option1\": \"Basic information (name, age, wishlist items)\", \"option2\": \"Comprehensive information (name, age, address, wishlist items, a personal message)\"}], \"input_token_count\": 623, \"output_token_count\": 124, \"time_taken\": \"0:00:04.893361\"}",
+        "message_id": "guest27082024210428",
+        "timestamp": "27082024210436",
+        "component_file_name": "purple_header_component_1724786312",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
         "role": "chat_acknowledge",
         "content": "Working on adding a form to contact Santa via email.",
         "message_id": "guest27082024210428",
