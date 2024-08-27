@@ -1,5 +1,14 @@
 [
     {
+        "role": "user",
+        "content": "Add an email form to contact santa",
+        "message_id": "guest27082024204713",
+        "timestamp": "27082024204713",
+        "component_file_name": "purple_header_component_1724786312",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
         "role": "chat_qna",
         "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Do you want the Contact Santa form to be accessible from a specific page or as a floating button that's accessible from all pages?\", \"option1\": \"Specific page\", \"option2\": \"Floating button on all pages\"}, {\"question 2\": \"For the Contact Santa email form, which fields would you like to include for users to fill out?\", \"option1\": \"Name, Email, and Message\", \"option2\": \"Name, Email, Age, Wishlist, and Message\"}], \"input_token_count\": 505, \"output_token_count\": 113, \"time_taken\": \"0:00:07.885453\"}",
         "message_id": "guest27082024204316",
