@@ -22,5 +22,9 @@
     {
         "level": 1,
         "task_description": "This is the user's current request of changes to be made:\nAdd a form to contact Master Chief"
+    },
+    {
+        "level": 1,
+        "task_description": "This is the user's previous chat history with this AI:\nIn the conversation, the user requested the addition of a button labeled \"pour coffee\" and specified that it should be positioned to the left of another button, also referred to as the \"pour coffee\" button. The AI acknowledged this idea, expressing that it was working on the task. Subsequently, the AI asked for clarification about the positioning of the button and the action intended when it is clicked, offering two options for each query. The user also mentioned adding a \"hadoken\" button, to which the AI confirmed its addition to the project. During this exchange, the AI presented the user with a checklist of potential features for implementation, highlighting some that were checked as preferred, such as an interactive 3D view of carpets and a customer review section, while others like user registration and live chat support remained unchecked, indicating areas for consideration. The conversation demonstrated a collaborative effort in enhancing the application's functionality.\nUser: Add a form to contact Master Chief\nAI: I'll add a form for contacting Santa right away.\nUser: Add a form to contact santa\nAI: Sure, I'll add a form to contact Santa.\nUser: Add a form to contact santa\nAI: Got it, adding a \"Hadoken\" button to the left.\n\nThis is the user's current request of changes to be made:\nAdd a form to contact santa"
     }
 ]

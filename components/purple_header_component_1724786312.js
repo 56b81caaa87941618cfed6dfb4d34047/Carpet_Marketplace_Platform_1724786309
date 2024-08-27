@@ -162,6 +162,31 @@ INSTRUCTION: 3. Desktop sign-in and sign-up links on the right.
       </div>
     </div>
   </header>
+
+  <!-- Santa Contact Form -->
+  <div class="max-w-md mx-auto mt-8 p-6 bg-white rounded-lg shadow-xl">
+    <h2 class="text-2xl font-bold mb-4 text-center text-red-600">Contact Santa</h2>
+    <form @submit.prevent="submitSantaForm">
+      <div class="mb-4">
+        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+        <input type="text" id="name" v-model="santaForm.name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50" required>
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="email" id="email" v-model="santaForm.email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50" required>
+      </div>
+      <div class="mb-4">
+        <label for="message" class="block text-sm font-medium text-gray-700">Message to Santa</label>
+        <textarea id="message" v-model="santaForm.message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50" required></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+          <i class='bx bxs-envelope mr-2'></i>
+          Send to Santa
+        </button>
+      </div>
+    </form>
+  </div>
 </template>
 
 <script>
@@ -171,6 +196,11 @@ export default {
     return {
       expanded: false,
       tab: null,
+      santaForm: {
+        name: '',
+        email: '',
+        message: ''
+      }
     };
   },
   methods: {
@@ -186,7 +216,19 @@ export default {
       console.log("Pouring coffee...");
       // Add your coffee pouring logic here
     }
+    },
     // End of Pour Coffee method
+
+    // Submit Santa Form method
+    submitSantaForm() {
+      console.log("Sending message to Santa:", this.santaForm);
+      // Add your form submission logic here
+      // For example, you might want to send this data to a backend API
+      // After submission, you may want to clear the form
+      this.santaForm = { name: '', email: '', message: '' };
+    }
+    // End of Submit Santa Form method
   }
 };
+</script>
 </script>
