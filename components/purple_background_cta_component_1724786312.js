@@ -138,7 +138,6 @@ export default {
         wishlist: '',
         status: 'nice'
       };
-    }
     },
     // Submit Master Chief Form method
     submitMasterChiefForm() {
