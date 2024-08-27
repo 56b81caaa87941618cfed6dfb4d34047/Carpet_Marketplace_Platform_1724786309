@@ -1,5 +1,14 @@
 [
     {
+        "role": "chat_qna",
+        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Would you prefer this contact form to be accessible from the main menu or as a dedicated section at the bottom of the homepage?\", \"option1\": \"Main menu\", \"option2\": \"Homepage section\"}, {\"question 2\": \"Should the contact form include specific fields for the user\\u2019s issue or request, or would you like a simple form with just 'Name', 'Email', and 'Message' fields?\", \"option1\": \"Specific fields for the user\\u2019s issue or request\", \"option2\": \"Simple form with 'Name', 'Email', and 'Message'\"}], \"input_token_count\": 269, \"output_token_count\": 131, \"time_taken\": \"0:00:09.168037\"}",
+        "message_id": "guest27082024195511",
+        "timestamp": "27082024195522",
+        "component_file_name": "purple_background_cta_component_1724786312",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
         "role": "user",
         "content": "Add a form to contact Master Chief",
         "message_id": "guest27082024195511",
