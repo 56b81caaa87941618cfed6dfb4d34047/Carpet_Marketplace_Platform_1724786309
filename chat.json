@@ -1,5 +1,14 @@
 [
     {
+        "role": "chat_qna",
+        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Where would you like the 'Contact Santa' form to be positioned within the app?\", \"option1\": \"On the main landing page for easy access\", \"option2\": \"In a dedicated 'Contact Us' section along with other contact forms\"}, {\"question 2\": \"Would you prefer a simple form design or a more interactive, Christmas-themed design?\", \"option1\": \"A simple, user-friendly design\", \"option2\": \"A Christmas-themed design with festive elements\"}], \"input_token_count\": 617, \"output_token_count\": 111, \"time_taken\": \"0:00:05.753001\"}",
+        "message_id": "guest27082024204947",
+        "timestamp": "27082024204954",
+        "component_file_name": "dark_footer_component_1724786312",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
         "role": "user",
         "content": "Add a form to contact santa",
         "message_id": "guest27082024204947",
