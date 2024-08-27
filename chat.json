@@ -1,5 +1,14 @@
 [
     {
+        "role": "chat_qna",
+        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Would you like the contact form to be a separate page or embedded within an existing page?\", \"option1\": \"Separate page\", \"option2\": \"Embedded within an existing page\"}, {\"question 2\": \"What specific fields would you like included in the contact form (e.g., Name, Email, Message)?\", \"option1\": \"Name, Email, Phone Number, Message\", \"option2\": \"Name, Email, Message\"}], \"input_token_count\": 269, \"output_token_count\": 105, \"time_taken\": \"0:00:02.577380\"}",
+        "message_id": "guest27082024205028",
+        "timestamp": "27082024205033",
+        "component_file_name": "dark_footer_component_1724786312",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
         "role": "chat_acknowledge",
         "content": "Great idea, I'll add a contact form for Master Chief.",
         "message_id": "guest27082024205028",
