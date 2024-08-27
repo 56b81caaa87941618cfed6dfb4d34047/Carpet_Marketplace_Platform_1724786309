@@ -1,5 +1,14 @@
 [
     {
+        "role": "chat_qna",
+        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Would you like the 'Contact Santa' form to be accessible from the main menu, or should it appear as a pop-up when users interact with a specific section of the app?\", \"option1\": \"Accessible from the main menu\", \"option2\": \"Appear as a pop-up\"}, {\"question 2\": \"Should the form include a pre-set message template for users to fill out, or would you prefer a blank form where users can write their own message to Santa?\", \"option1\": \"Include a pre-set message template\", \"option2\": \"Blank form for custom messages\"}], \"input_token_count\": 268, \"output_token_count\": 133, \"time_taken\": \"0:00:02.619197\"}",
+        "message_id": "guest27082024195416",
+        "timestamp": "27082024195421",
+        "component_file_name": "purple_background_cta_component_1724786312",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
         "role": "chat_acknowledge",
         "content": "I'll add a form for contacting Santa right away.",
         "message_id": "guest27082024195416",
