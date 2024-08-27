@@ -2,7 +2,7 @@
 INSTRUCTION: Summary: HTML file that describes the header section including: 
 INSTRUCTION: 1. Site branding with a logo on the left.
 INSTRUCTION: 2. Desktop navigation menu with links to different pages in the middle.
-INSTRUCTION: 3. Desktop sign-in and sign-up links on the right.
+INSTRUCTION: 3. Desktop sign-in and sign-up links on the right. 
 -->
 
 <template>
