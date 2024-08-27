@@ -74,7 +74,34 @@ INSTRUCTION: It is centered on the page and includes a gradient-based title, a s
               Send to Santa
             </button>
           </form>
+
+        <!-- Contact Master Chief Form -->
+        <div id="contact-master-chief-form" class="mt-12 max-w-lg mx-auto bg-gray-800 rounded-xl shadow-lg p-6">
+          <h3 class="text-2xl font-bold text-white mb-6">Contact Master Chief</h3>
+          <form @submit.prevent="submitMasterChiefForm">
+            <div class="mb-4">
+              <label for="spartan-name" class="block text-sm font-medium text-white mb-2">Spartan Name</label>
+              <input type="text" id="spartan-name" v-model="masterChiefForm.spartanName" class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none" required>
+            </div>
+            <div class="mb-4">
+              <label for="mission-details" class="block text-sm font-medium text-white mb-2">Mission Details</label>
+              <textarea id="mission-details" v-model="masterChiefForm.missionDetails" rows="4" class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none" required></textarea>
+            </div>
+            <div class="mb-4">
+              <label for="weapon-choice" class="block text-sm font-medium text-white mb-2">Preferred Weapon</label>
+              <select id="weapon-choice" v-model="masterChiefForm.weaponChoice" class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none" required>
+                <option value="assault-rifle">Assault Rifle</option>
+                <option value="battle-rifle">Battle Rifle</option>
+                <option value="energy-sword">Energy Sword</option>
+                <option value="gravity-hammer">Gravity Hammer</option>
+              </select>
+            </div>
+            <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+              Send to Master Chief
+            </button>
+          </form>
         </div>
+
 
       </div>
     </div>
@@ -92,6 +119,11 @@ export default {
         name: '',
         wishlist: '',
         status: 'nice'
+      },
+      masterChiefForm: {
+        spartanName: '',
+        missionDetails: '',
+        weaponChoice: 'assault-rifle'
       }
     };
   },
@@ -107,7 +139,19 @@ export default {
         status: 'nice'
       };
     }
-    // End of Submit Santa Form method
+    },
+    // Submit Master Chief Form method
+    submitMasterChiefForm() {
+      console.log('Master Chief Form submitted:', this.masterChiefForm);
+      // Add your form submission logic here
+      // Reset form after submission
+      this.masterChiefForm = {
+        spartanName: '',
+        missionDetails: '',
+        weaponChoice: 'assault-rifle'
+      };
+    }
+    // End of Submit Master Chief Form method
   }
 };
 </script>
