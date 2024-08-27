@@ -54,5 +54,11 @@
         "content": "Got it, adding a \"Hadoken\" button to the left.",
         "timestamp": "27082024194312",
         "message_id": "guest27082024194310"
+    },
+    {
+        "role": "chat_qna",
+        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Should the 'Hadoken' button be of the same style and size as the 'Pour Coffee' button?\", \"option1\": \"Yes, keep the style and size consistent.\", \"option2\": \"No, make the 'Hadoken' button have a distinct style or size.\"}, {\"question 2\": \"Do you want any specific functionality or animation associated with the 'Hadoken' button when clicked?\", \"option1\": \"Yes, add a specific action or animation.\", \"option2\": \"No, just a simple clickable button without extra effects.\"}], \"input_token_count\": 353, \"output_token_count\": 126, \"time_taken\": \"0:00:03.897427\"}",
+        "timestamp": "27082024194318",
+        "message_id": "guest27082024194310"
     }
 ]
