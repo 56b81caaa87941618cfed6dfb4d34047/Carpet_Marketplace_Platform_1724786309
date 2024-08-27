@@ -89,6 +89,18 @@ INSTRUCTION: 3. Desktop sign-in and sign-up links on the right.
           </li>
         </ul>
 
+        <!-- Pour Coffee Button -->
+        <div class="flex-1 flex justify-end items-center ml-4">
+          <button
+            id="pour-coffee-button"
+            class="btn-sm transition duration-150 ease-in-out text-white hover:text-yellow-200 bg-gradient-to-r from-brown-600 to-brown-400 hover:from-brown-500 hover:to-brown-300 rounded-full px-4 py-2 shadow-lg flex items-center"
+            @click="pourCoffee"
+          >
+            <i class='bx bxs-coffee-alt mr-2'></i>
+            Pour Coffee
+          </button>
+        </div>
+
         <!-- Mobile Menu -->
         <div class="md:hidden flex items-center ml-4">
           <button
@@ -149,5 +161,13 @@ export default {
       tab: null,
     };
   },
+  methods: {
+    // Pour Coffee method
+    pourCoffee() {
+      console.log("Pouring coffee...");
+      // Add your coffee pouring logic here
+    }
+    // End of Pour Coffee method
+  }
 };
 </script>
