@@ -1,5 +1,14 @@
 [
     {
+        "role": "chat_acknowledge",
+        "content": "Great idea, I'll add a contact form for Master Chief.",
+        "message_id": "guest27082024205028",
+        "timestamp": "27082024205029",
+        "component_file_name": "",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
         "role": "user",
         "content": "Add a form to contact master chief",
         "message_id": "guest27082024205028",
