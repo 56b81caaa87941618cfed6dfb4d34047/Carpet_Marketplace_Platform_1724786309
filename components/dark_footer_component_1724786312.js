@@ -228,6 +228,26 @@ INSTRUCTION: 5. The fifth column covers legal information such as the refund pol
         </div>
       </div>
 
+      <!-- Contact Master Chief Form -->
+      <div class="max-w-md mx-auto mt-8 p-6 bg-green-100 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold text-green-700 mb-4">Contact Master Chief</h2>
+        <form @submit.prevent="submitMasterChiefForm">
+          <div class="mb-4">
+            <label for="mcName" class="block text-sm font-medium text-green-700">Name</label>
+            <input type="text" id="mcName" v-model="masterChiefForm.name" class="mt-1 block w-full rounded-md border-green-300 shadow-sm focus:border-green-500 focus:ring focus:ring-green-200 focus:ring-opacity-50" required>
+          </div>
+          <div class="mb-4">
+            <label for="mcEmail" class="block text-sm font-medium text-green-700">Email</label>
+            <input type="email" id="mcEmail" v-model="masterChiefForm.email" class="mt-1 block w-full rounded-md border-green-300 shadow-sm focus:border-green-500 focus:ring focus:ring-green-200 focus:ring-opacity-50" required>
+          </div>
+          <div class="mb-4">
+            <label for="mcMessage" class="block text-sm font-medium text-green-700">Message to Master Chief</label>
+            <textarea id="mcMessage" v-model="masterChiefForm.message" rows="4" class="mt-1 block w-full rounded-md border-green-300 shadow-sm focus:border-green-500 focus:ring focus:ring-green-200 focus:ring-opacity-50" required></textarea>
+          </div>
+          <button type="submit" class="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">Send to Master Chief</button>
+        </form>
+      </div>
+
       <!-- Contact Santa Form -->
       <div class="max-w-md mx-auto mt-8 p-6 bg-red-100 rounded-lg shadow-lg">
         <h2 class="text-2xl font-bold text-red-700 mb-4">Contact Santa</h2>
@@ -264,6 +284,11 @@ export default {
         name: '',
         email: '',
         message: ''
+      },
+      masterChiefForm: {
+        name: '',
+        email: '',
+        message: ''
       }
     };
   },
@@ -273,7 +298,14 @@ export default {
       // Add your form submission logic here
       // Reset form after submission
       this.santaForm = { name: '', email: '', message: '' };
+    },
+    // Master Chief Form Submit method
+    submitMasterChiefForm() {
+      console.log('Submitting Master Chief Form:', this.masterChiefForm);
+      // Add your form submission logic here
+      // Reset form after submission
+      this.masterChiefForm = { name: '', email: '', message: '' };
     }
+    // End of Master Chief Form Submit method
   }
-};
 </script>
